@@ -59,7 +59,9 @@ h5{
 h6{
     font-size: 1rem;
 }
-
+p{
+    margin-top: 2rem;
+}
 a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -160,18 +162,13 @@ a{
     gap: var(--gapPrincipal);
     justify-items:center;
     min-height: 100vh;
-    z-index: 100;
-
-
-    
-    
+    z-index: 100;    
 }
 
 .intro-text-content, .introImg{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 .intro-text-content h2{
@@ -208,8 +205,6 @@ a{
     text-transform: uppercase;
     margin-bottom: 5rem;
     font-size: 5rem;
-    
-
 }
 
 
@@ -233,8 +228,7 @@ a{
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .social-content .social-breve{
@@ -242,8 +236,6 @@ a{
     font-size: 2.5rem;
     color: yellow;
     margin-bottom: 5rem;
-
-
 }
 
 .social-grid{
@@ -253,9 +245,6 @@ a{
     flex-wrap: nowrap;
     gap: var(--gapPrincipal);
     counter-reset: grid-cont;
-    
-    
-
 }
 
 .social-grid article h3{
@@ -265,8 +254,6 @@ a{
     position: relative;
     padding-left: 7rem;
     padding-bottom: 2rem;
-
-
 }
 .social-grid article h3::before{
 
@@ -278,8 +265,6 @@ a{
     top: -3rem;
     left: 0;
     font-family: 'Poppins', sans-serif;
-    
-
 
 }
 
@@ -288,8 +273,6 @@ a{
     color: yellow;
     font-size: 9rem;
     transition: 901ms ease-in-out;
-    
-
 }
 
 .social-grid p{
@@ -305,10 +288,6 @@ a{
     grid-template-columns: 1fr 1fr 1fr;
     flex-wrap: nowrap;
     gap: var(--gapPrincipal);
-    
-    
-    
-
 }
 
 .galery-content h2{
@@ -317,18 +296,12 @@ a{
     font-size: 6rem;
     position: relative;
     top: -2rem;
-
-
 }
 .galery-content p{
     text-transform: capitalize;
     margin-bottom: 3rem;
     font-size: 2rem;
     position: relative;
-
-    
-
-
 }
 .gallery{
     min-height: 100vh;
@@ -341,6 +314,103 @@ a{
     overflow: hidden;
 }
 
+.gallery-img img{
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover{
+    transform: translate(-3%, 3%) scale(1.2);
+    
+
+}
+
+.cont-section{
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    text-align: justify;
+}
+.cont-section table{
+    margin-top: 7rem;
+    width: 100%;
+    
+
+}
+
+td, th{
+    border : -1rem solid var(--light-gray-color);
+    padding: 1rem;
+}
+thead{
+    background-color: #440044a2;
+    color: black;
+    font-size: 2rem;
+}
+tbody{
+    background-color: #33005560;
+    color: black;
+    font-size: 1.9rem;
+}
+tfoot{
+    background-color: #440044a2;
+    color:black;
+    font-size: 2rem;
+}
+.cont-section h2{
+    position: relative;
+    margin-bottom: 8rem;
+    font-size: 6rem;
+    top: 6rem;
+    
+}
+
+tfoot{
+    text-align: center;
+}
+
+caption{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.table-content{
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.responsive-table{
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.containerForm{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gapPrincipal);
+    justify-items:center;
+    min-height: 100vh;
+    z-index: 100;
+}
+.form-contact-content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; 
+}
+.img-contact-content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; 
+}
+
+.img-contact-content img{
+    width: 100%;
+    height: auto;
+}
 
 
 
