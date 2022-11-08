@@ -330,7 +330,8 @@ a{
     flex-flow: column nowrap;
     text-align: justify;
 }
-.cont-section table{
+.cont-section table
+{
     margin-top: 7rem;
     width: 100%;
     
@@ -396,22 +397,6 @@ caption{
     min-height: 100vh;
     z-index: 100;
 }
-.form-contact-content{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center; 
-}
-.img-contact-content{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center; 
-}
-
-.img-contact-content img{
-    width: 100%;
-    height: auto;
-}
-
 
 
 
