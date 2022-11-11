@@ -425,7 +425,7 @@ caption{
     box-shadow: 0.2rem 0.2rem 0.5rem yellow;
     
 }
-.full-widht{
+.full-width{
     width: 100%;
     flex: 1 1 100%;
 }
@@ -487,5 +487,36 @@ footer p{
 }
 
 
+/*Media queries*/
 
+@media (max-width:840px){
+    .intro-content{
+        grid-template-columns: 1fr;
+    }
+    .social-grid{
+        grid-template-columns: 1fr;
+    }
+    .gallery-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro{
+        grid-template-columns: 1fr;
+    }
+    .contact-form{
+        grid-column: span 1;
+    }
+
+}
+
+@media (max-width:640px){
+
+    .gallery-grid{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
 
