@@ -399,7 +399,16 @@ caption{
 }
 
 
+.contact-form{
+    grid-column: span 2;
+    width: 100vw;
+}
 
+.contact-form fieldset{
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 
 
