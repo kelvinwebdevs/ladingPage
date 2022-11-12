@@ -10,13 +10,15 @@
 </head>
 
 <body>
+    <input type="checkbox" role="button" aria-label="Close Menu" id="close-menu" name="close-menu" class="close-menu">
+    <label for="close-menu" title="Close Menu" class="close-menu-label"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1>
-                <a href="#intro">LOGO</a>
+                <a href="#intro " onclick="getElementById('close-menu').checked = false;">LOGO</a>
             </h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#work">Works</a></li>
                     <li><a href="#gallery">Social</a></li>
@@ -302,6 +304,9 @@
     <footer class="full-widht">
         <p>Desenvolvido com &#9829 por kelvinwebdevs</p>
     </footer>
+
+    <a href="#intro" class="top-back-menu main-content">⇧</a>
+
     
 </body>
 

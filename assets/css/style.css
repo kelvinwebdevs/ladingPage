@@ -80,6 +80,29 @@ a{
  padding: 8rem var(--gapPrincipal);
 }
 
+.top-back-menu{
+    position: fixed;
+    right: 1rem;
+    bottom:10rem;
+    padding: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    background: #5a5959;
+    color: #ffffff;
+    border-radius: 50%;
+    z-index: 10000000;
+    border: 0.1rem solid #000000;
+
+  
+} 
+
+.top-back-menu:hover{
+    color: #ffee00;
+}
 
 .section{
     min-height: 100vh;
@@ -92,7 +115,7 @@ a{
     right: 0;
     width: 100vw;
     border-bottom: 0.1rem solid var(--light-gray-color);
-    z-index: 10000;
+    z-index: 222;
     
 }
 
@@ -120,7 +143,7 @@ a{
     padding: 0;
     display: flex;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 6rem;
 
 }
 
@@ -132,7 +155,7 @@ a{
     position: relative;
 }
 
-.menu ul li a::after{
+ .menu ul li a::after{
    content: '';
    position: absolute;
    bottom: 0;
@@ -141,7 +164,7 @@ a{
    height: 0.19rem;
    background: var(--secondaruColor);
    transition: all 400ms ease-in-out;
-}
+} 
 
 .menu ul li a:hover::after{
     width: 100%;
@@ -170,7 +193,7 @@ a{
 
 .intro-text-content h2{
     font-size: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     text-transform: uppercase;
 }
 
@@ -509,14 +532,84 @@ footer p{
 
 }
 
-@media (max-width:640px){
+@media (max-width:680px){
 
     .gallery-grid{
-        align-items: center;
-        justify-content: center;
-        display: flex;
+        grid-template-columns: 1fr;
+    }
+    .gallery-img{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+    .gallery-img img{
+        width: 100%;
+    }
+    .menu{
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        display: none;
+        
+        
+
+
+    }
+    .menu-content,.menu-content ul{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-}
+ 
+    .menu-content{
+        height: 100%;
+        
+    }
+    .menu h1{
+        margin-bottom: 5rem;
+        
+    }
+    .close-menu{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        
+    }
 
+ 
+
+
+    .close-menu-label::after{
+        content: '≡';
+        position: fixed;
+        z-index: 100000000;
+        top: 0;
+        right: 2rem;
+        color:red;
+        font-size: 4rem;
+        line-height: 3rem;
+        width: 5rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        
+    }
+
+    .close-menu{
+        display: none;
+
+    }
+
+    .close-menu:checked~.menu{
+        display: block;
+    }
+    .close-menu:checked~.close-menu-label::after{
+        content: '×';
+    }
+
+
+}
